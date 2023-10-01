@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(135, 247, 200, 1);
+    position: sticky;
+    top: 0;
+    height: 60px;
+    box-shadow: 0px 2px 15px rgb(54, 123, 96);
+    z-index: 999;
+}
+
+#header a img {
+    width: 300px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style-type: none;
+    padding: 0px 25px;
+    transition: .3s all ease;
+    position: relative;
+}
+
+#navbar li:hover {
+    transform: scale(.96);
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 550;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'AR One Sans', sans-serif;
+    letter-spacing: 2px;
+    transition: 1s all ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    -webkit-text-fill-color: rgba(0, 162, 255, 1);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 33%;
+    height: 1px;
+    background-color: rgba(0, 162, 255, 1);
+    position: absolute;
+    border: 2px solid rgba(0, 162, 255, 1);
+    border-radius: 30px;
+    top: 110%;
+    left: 25px;
+}
+
+@media (max-width:1200px) {
+    #navbar li a {
+        font-size: 1.2vw;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+        height: .1px;
+    }
+}
+
+@media (max-width:980px) {
+    #navbar li {
+        padding: 0px 2vw;
+    }
+
+    #navbar li a {
+        font-size: 1.5vw;
+        letter-spacing: 1.4px;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+        height: .1px;
+    }
+}
+
+@media (max-width:815px) {
+    #header a img {
+        width: 200px;
+    }
+}
+
+@media (max-width:340px) {
+    #header a img {
+        width: 150px;
+    }
+}
+
+/*---------------HAMBURGER-MENU-----------------*/
+#hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+#hamburger-menu li {
+    list-style-type: none;
+}
+
+#hamburger-menu li div {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 8px;
+    border-radius: 30px;
+    margin-left: -30px;
+}
+
+#hamburger-menu li:nth-child(1) div {
+    margin-top: 150%;
+}
+
+@media (max-width:700px) {
+
+    #hamburger-menu {
+        display: block
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        right: -100%;
+        line-height: 50px;
+        background-color: rgba(41, 91, 59, 0.381);
+        top: 60px;
+        transition: .4s all ease;
+    }
+
+    #navbar li a {
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    #navbar li:nth-child(1) {
+        left: 10rem;
+        transition: .4s all ease;
+    }
+
+    #navbar li:nth-child(2) {
+        left: 12rem;
+        transition: 1s all ease;
+    }
+
+    #navbar li:nth-child(3) {
+        left: 14rem;
+        transition: 1.2s all ease;
+    }
+
+    #navbar li:nth-child(4) {
+        left: 18rem;
+        transition: 1.5s all ease;
+    }
+
+    #navbar li:nth-child(5) {
+        left: 20rem;
+        transition: 1.8s all ease;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+        content: "";
+        width: 33%;
+        height: 1px;
+        background-color: rgba(0, 162, 255, 1);
+        position: absolute;
+        border: 2px solid rgba(0, 162, 255, 1);
+        border-radius: 30px;
+        top: 40px;
+        left: 25px;
+    }
+
+    #navbar.slideInNavItems {
+        right: 0;
+    }
+
+    #navbar.slideInNavItems li:nth-child(1) {
+        left: 0rem;
+    }
+
+    #navbar.slideInNavItems li:nth-child(2) {
+        left: 0rem;
+    }
+
+    #navbar.slideInNavItems li:nth-child(3) {
+        left: 0rem;
+    }
+
+    #navbar.slideInNavItems li:nth-child(4) {
+        left: 0rem;
+    }
+
+    #navbar.slideInNavItems li:nth-child(5) {
+        left: 0rem;
+    }
+}
+
+@media (max-width:300px) {
+    #hamburger-menu {
+        right: 10px;
+    }
+}
+
+@media (max-height:320px) {
+    #navbar {
+        line-height: 30px;
+    }
+
+    #navbar li a {
+        font-size: 10px;
+        letter-spacing: 1.7px;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+        content: "";
+        width: 33%;
+        height: .1px;
+        top: 70%;
+        left: 15px;
+    }
+}

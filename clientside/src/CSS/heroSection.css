@@ -1,0 +1,54 @@
+#hero {
+    background-image: url(../IMAGES/house8.jpg);
+    background-repeat: no-repeat;
+    height: 60vh;
+    height: 60dvh;
+    background-size: 40% 70%;
+    background-position: top 50% right 2%;
+
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#hero h1,
+#hero h3 {
+    margin-bottom: 12px;
+}
+
+#hero p {
+    color: rgb(255, 8, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width:1000px) {
+    #hero {
+        padding-left: 30px;
+        height: 40dvh;
+    }
+}
+@media (max-width:600px) {
+    #hero {
+        height: 30dvh;
+    }
+}
+@media (max-width:600px) {
+    #hero {
+        height: 20dvh;
+    }
+}
+@media (max-width:815px) {
+    #hero h1 {
+        font-size: 3vw;
+    }
+
+    #hero h3 {
+        font-size: 2vw;
+    }
+
+    #hero p {
+        font-size: 2vw;
+    }
+}

@@ -1,0 +1,72 @@
+*{
+    padding:0;
+    margin:0;
+}
+.wishlist-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wishlist-wrapper #house-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding:30px 0px;
+}
+/*--------------IMAGE SECTION---------------*/
+
+.wishlist-wrapper #house-sec img{
+    width: 60%;
+    height: 60%;
+}
+
+/*---------------DESCRIPTION----------------*/
+.wishlist-wrapper #house-sec #desc{
+    width: 60%;
+    height: fit-content;
+    padding: 20px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+}
+.wishlist-wrapper #house-sec #desc h5{
+    margin-bottom: 20px;
+}
+.wishlist-wrapper #house-sec #desc h4{
+    margin-bottom: 20px;
+}
+.wishlist-wrapper #house-sec #desc h4:nth-child(3){
+    text-decoration: line-through;
+}
+
+/*---------------BUTTON----------------------*/
+.wishlist-wrapper #house-sec #btn-wrap{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.wishlist-wrapper #house-sec #btn-wrap button{
+    width: 30%;
+    height: 50px;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    word-spacing: 6px;
+    letter-spacing: 3px;
+    text-align: center;
+    border-radius: 14px;
+    border: 1.5px solid black;
+    cursor: pointer;
+    transition: .2s all ease;
+}
+.wishlist-wrapper #house-sec #btn-wrap button:nth-child(1){
+    margin-right: 6%;
+}
+.wishlist-wrapper #house-sec #btn-wrap button:hover{
+    transform: scale(.96);
+}

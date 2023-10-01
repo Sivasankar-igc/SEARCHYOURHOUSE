@@ -1,0 +1,107 @@
+#recom-house {
+    text-align: center;
+    padding: 40px 0;
+    z-index:0;
+}
+
+#recom-house h1 {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight: bolder;
+    color: black;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#recom-house .rh-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top:20px;
+    flex-wrap: wrap;
+}
+
+#recom-house .house {
+    position: relative;
+    width: 25%;
+    height: fit-content;
+    padding: 20px 30px;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    box-shadow: 1px 3px 20px black;
+    cursor: pointer;
+    font-size:110%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:1% 2%;
+    transition: .7s all ease;
+}
+#recom-house .house:hover{
+    box-shadow: 6px 5px 25px black;
+    transform: scale(.96);
+}
+
+#recom-house .house img {
+    width:100%;
+    height: 13dvw;
+    border-radius: 10px;
+    transition: .3s all ease;
+}
+#recom-house .house img:hover {
+    transform: scale(.96);
+}
+
+#recom-house .house .desc{
+    text-align: start;
+    padding:8px 0px;
+}
+#recom-house .house .desc h4:nth-child(3){
+    text-decoration:line-through;
+}
+#recom-house .house .desc h5, #recom-house .house .desc h4{
+    padding:1.5px 0;
+}
+#recom-house .house .desc h4{
+    word-spacing: 3px;
+}
+
+@media (max-width:930px){
+    #recom-house .house .desc h5 {
+        font-size:10px;
+    }
+    #recom-house .house .desc h4{
+        font-size: 12px;
+    }
+}
+@media (max-width:715px){
+    #recom-house .house{
+        width: 40%;
+        margin:1% 5%;
+    }
+    #recom-house .house img{
+        height: 150px;
+    }
+    #recom-house .house .desc h5 {
+        font-size:14px;
+    }
+    #recom-house .house .desc h4{
+        font-size: 15px;
+    }
+}
+@media (max-width:500px){
+    #recom-house .house{
+        width: 80%;
+        margin:3% 10%;
+    }
+    #recom-house .house img{
+        height: 250px;
+    }
+    #recom-house .house .desc h5 {
+        font-size:14px;
+    }
+    #recom-house .house .desc h4{
+        font-size: 15px;
+    }
+    #recom-house h1{
+        font-size: 20px;
+    }
+}

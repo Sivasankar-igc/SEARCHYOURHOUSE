@@ -1,0 +1,42 @@
+#searchHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.4%;
+}
+
+#searchHome button {
+    width: 500px;
+    height: 50px;
+    background-color: black;
+    -webkit-text-fill-color: white;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 15px black;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    font-family: cursive;
+    border-radius: 30px;
+    transition: .7s all ease;
+}
+
+#searchHome button:hover {
+    transform: scale(.96);
+    box-shadow: 0px 5px 15px aqua;
+    -webkit-text-fill-color: aqua;
+}
+
+@media (max-width:630px) {
+    #searchHome button {
+        width: 80vw;
+        font-size: 2.7vw;
+    }
+}
+@media (max-width:400px) {
+    #searchHome button {
+        width: 80vw;
+        font-size: 2.2vw;
+    }
+}
